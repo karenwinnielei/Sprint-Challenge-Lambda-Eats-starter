@@ -5,6 +5,7 @@ import PizzaForm from './PizzaForm'
 import formSchema from '../validation/formSchema'
 import * as yup from 'yup'
 import axios from 'axios'
+import PizzaImg from '../Assets/Pizza.jpg'
 
 
   const initialFormValues = {
@@ -108,6 +109,7 @@ export default function App(){
     <div>
       <nav>
         <h1>Lambda Eats</h1>
+        <img src={PizzaImg} alt='Pizza'/>
         <p>Order the best pizza here!</p>
         <div className ='nav-links'>
           <Link to ='/'>Home</Link>
@@ -116,10 +118,10 @@ export default function App(){
       </nav>
 
       <Switch>
-        <Route path='/pizza'>
+        <Route exact path='/'>
           <Pizza/>
         </Route>
-        <Route exact path='/'>
+        <Route path='/pizza'>
           <PizzaForm
             values = {formValues} 
             onInputChange = {onInputChange} 
