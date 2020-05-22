@@ -29,7 +29,8 @@ export default function PizzaForm(props){
                     <label>Size&nbsp;
                         <select 
                             name='size' 
-                            value={values.size}>
+                            value={values.size}
+                            onChange = {onInputChange}>
                             <option value=''>Select a Size</option>    
                             <option value ='Small'>Small</option>
                             <option value='Medium'>Medium</option>
@@ -42,6 +43,7 @@ export default function PizzaForm(props){
                             type='checkbox'
                             name='topping1'
                             checked={values.topping1}
+                            onChange = {onInputChange}
                         />
                     </label>
                     <label>Sausage&nbsp;
@@ -49,6 +51,7 @@ export default function PizzaForm(props){
                             type='checkbox'
                             name='topping2'
                             checked={values.topping2}
+                            onChange = {onInputChange}
                         />
                     </label>
                     <label>Mushroom&nbsp;
@@ -56,6 +59,7 @@ export default function PizzaForm(props){
                             type='checkbox'
                             name='topping3'
                             checked={values.topping3}
+                            onChange = {onInputChange}
                         />
                     </label>
                     <label>Onion&nbsp;
@@ -63,6 +67,7 @@ export default function PizzaForm(props){
                             type='checkbox'
                             name='topping4'
                             checked={values.topping4}
+                            onChange = {onInputChange}
                         />
                     </label>                    
                 </div>
