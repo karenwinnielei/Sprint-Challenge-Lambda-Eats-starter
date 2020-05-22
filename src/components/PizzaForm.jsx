@@ -5,7 +5,10 @@ export default function PizzaForm(props){
     const {
         values,
         onInputChange,
-        onSubmit
+        onSubmit,
+        disabled,
+        errors,
+        onCheckboxChange,
     } = props
 
     return(
@@ -41,37 +44,47 @@ export default function PizzaForm(props){
                     <label>Pepperoni&nbsp;
                         <input 
                             type='checkbox'
-                            name='topping1'
-                            checked={values.topping1}
-                            onChange = {onInputChange}
+                            name='pepperoni'
+                            checked={values.toppings.pepperoni}
+                            onChange = {onCheckboxChange}
                         />
                     </label>
                     <label>Sausage&nbsp;
                         <input 
                             type='checkbox'
-                            name='topping2'
-                            checked={values.topping2}
-                            onChange = {onInputChange}
+                            name='sausage'
+                            checked={values.toppings.sausage}
+                            onChange = {onCheckboxChange}
                         />
                     </label>
                     <label>Mushroom&nbsp;
                         <input 
                             type='checkbox'
-                            name='topping3'
-                            checked={values.topping3}
-                            onChange = {onInputChange}
+                            name='mushroom'
+                            checked={values.toppings.mushroom}
+                            onChange = {onCheckboxChange}
                         />
                     </label>
                     <label>Onion&nbsp;
                         <input 
                             type='checkbox'
-                            name='topping4'
-                            checked={values.topping4}
-                            onChange = {onInputChange}
+                            name='onion'
+                            checked={values.toppings.onion}
+                            onChange = {onCheckboxChange}
                         />
-                    </label>                    
+                    </label>
+                    <label>Special Instructions&nbsp; 
+                        <input 
+                            type='text'
+                            name = 'instructions'
+                            placeholder = 'Type special instructions here'
+                            maxLength = '120'
+                            value = {values.instructions}
+                            onChange = {onInputChange}
+                            />
+                    </label>               
                 </div>
-                <button>Submit</button>
+                <button disabled={disabled}>Submit</button>
             </form>
         </div>
     )
