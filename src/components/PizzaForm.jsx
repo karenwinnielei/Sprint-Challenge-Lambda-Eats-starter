@@ -85,6 +85,13 @@ export default function PizzaForm(props){
                     </label>               
                 </div>
                 <button disabled={disabled}>Submit</button>
+                <div className='errors'>
+                    {
+                    Object.values(errors).map((error, idx) => (
+                    <div key={idx}>{error}</div>
+                    ))
+                    }
+                </div>
             </form>
         </div>
     )

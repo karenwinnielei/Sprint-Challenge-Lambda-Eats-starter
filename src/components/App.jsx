@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { Route, Switch, Link } from 'react-router-dom'
-import Home from './Home'
+import Pizza from './Home'
 import PizzaForm from './PizzaForm'
 import formSchema from '../validation/formSchema'
 import * as yup from 'yup'
@@ -116,10 +116,10 @@ export default function App(){
       </nav>
 
       <Switch>
-        <Route exact path='/'>
-          <Home/>
-        </Route>
         <Route path='/pizza'>
+          <Pizza/>
+        </Route>
+        <Route exact path='/'>
           <PizzaForm
             values = {formValues} 
             onInputChange = {onInputChange} 
@@ -128,7 +128,13 @@ export default function App(){
             disabled={disabled} 
             errors={formErrors}
           />
-          <pre>{JSON.stringify(pizza, null, 2)}</pre>
+
+          {pizza.map(pz => {
+            return (
+              <Pizza key={pz.id} details={pz}/>
+            )
+          })
+        }
         </Route>
 
       </Switch>
