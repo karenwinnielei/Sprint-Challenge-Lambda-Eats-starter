@@ -1,10 +1,10 @@
 import React from 'react'
 
 export default function Pizza(props){
-    const {details} = props
+    const { details } = props
 
     if (!details) {
-    return <h3>Fetching your pizza order...</h3>
+    return <h3>So many customization options with size, toppings, and special instructions!</h3>
     }
 
     return(

@@ -39,28 +39,28 @@ Follow these steps to set up and work on your project:
 - [x] Download project dependencies by running `npm install`
 - [x] Start up the app using `npm start`
 - [x] Create a new branch: git checkout -b `<firstName-lastName>`. Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 ### Task 2: Minimum Viable Product
 
 Your MVP should include, at a minimum, the following components.
 
 - [x] A homepage that has a "/" route and links to your form (button, nav bar, or any other type of link is acceptable)
-- [ ] A form with a "/pizza" route
-- [ ] A name text input field
-- [ ] Validation for name - name must be at least 2 characters
-- [ ] Dropdown form component for pizza size
-- [ ] Checklist form component for toppings - at least 4 (hint: name each separately!)
-- [ ] Text input form component for special instructions
-- [ ] An Add to Order button that submits form and returns a database record of name, pizza size, sauce, and special instructions
+- [x] A form with a "/pizza" route
+- [x] A name text input field
+- [x] Validation for name - name must be at least 2 characters
+- [x] Dropdown form component for pizza size
+- [x] Checklist form component for toppings - at least 4 (hint: name each separately!)
+- [x] Text input form component for special instructions
+- [x] An Add to Order button that submits form and returns a database record of name, pizza size, sauce, and special instructions
 
 #### Testing MVP
 
 Implement the following tests in Cypress:
 
-- [ ] test that you can add text to the box
-- [ ] test that you can select multiple toppings
-- [ ] test that you can submit the form
+- [x] test that you can add text to the box
+- [x] test that you can select multiple toppings
+- [x] test that you can submit the form
 
 You may use the following wireframe (also in a folder above) as guidance as you design your site but it is not required that you do so.
 
@@ -102,9 +102,9 @@ One of your goals is to return a database record of the order - for this you'll 
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your TL will count the project as complete by merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
+- [x] Add your project manager as a reviewer on the pull-request
+- [x] Your TL will count the project as complete by merging the branch back into master.
 
 ## Grading rubric
 

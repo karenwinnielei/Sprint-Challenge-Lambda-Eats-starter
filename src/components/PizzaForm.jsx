@@ -73,8 +73,9 @@ export default function PizzaForm(props){
                             onChange = {onCheckboxChange}
                         />
                     </label>
-                    <label>Special Instructions&nbsp; 
-                        <input 
+                    <h4>Special Instructions</h4>
+                    <label>
+                        <input className='instructions' 
                             type='text'
                             name = 'instructions'
                             placeholder = 'Type special instructions here'
@@ -84,7 +85,7 @@ export default function PizzaForm(props){
                             />
                     </label>               
                 </div>
-                <button disabled={disabled}>Submit</button>
+                <button disabled={disabled}>Add to Order</button>
                 <div className='errors'>
                     {
                     Object.values(errors).map((error, idx) => (
